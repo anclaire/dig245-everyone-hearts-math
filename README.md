@@ -42,13 +42,13 @@ Complete the following to prepare for this assignment. See [Resources](#resource
 
 ## Instructions
 
-- [ ] Fork this repository and clone it to your `critical-web-design` folder on your machine.
+- [X] Fork this repository and clone it to your `critical-web-design` folder on your machine.
 
 #### Concept
 
-- [ ] Develop a concept for your project by researching [math story problems](https://www.google.com/search?hl=en&q=math+story+problems).
-- [ ] Subject matter is completely up to you. For example, you could think about how you might represent your own experiences with data, numbers, software, etc.
-- [ ] Consider the interface to be part of the concept, like in these [examples](https://docs.google.com/spreadsheets/d/1mQ0doWT6tGXm2W-hB5zuz3I8mijGhLSkAe_XrcfMdok/edit#gid=0): John Maeda [Money Counter](http://www.maedastudio.com/2005/moneycounter/index.php?category=all&next=exists&prev=exists&this=moneycounter), [Misspeller](http://www.maedastudio.com/2007/misspell/index.php?category=all&next=2007/human&prev=2007/reduce&this=misspell), Alexei Shulgin [Form Art](http://www.c3.hu/collection/form), Kass Schmitt and Yoz Grahame [Choose](https://bak.spc.org/choose/), or Dan Kurtz [Binky](https://www.binky.rocks/)
+- [X] Develop a concept for your project by researching [math story problems](https://www.google.com/search?hl=en&q=math+story+problems).
+- [X] Subject matter is completely up to you. For example, you could think about how you might represent your own experiences with data, numbers, software, etc.
+- [X] Consider the interface to be part of the concept, like in these [examples](https://docs.google.com/spreadsheets/d/1mQ0doWT6tGXm2W-hB5zuz3I8mijGhLSkAe_XrcfMdok/edit#gid=0): John Maeda [Money Counter](http://www.maedastudio.com/2005/moneycounter/index.php?category=all&next=exists&prev=exists&this=moneycounter), [Misspeller](http://www.maedastudio.com/2007/misspell/index.php?category=all&next=2007/human&prev=2007/reduce&this=misspell), Alexei Shulgin [Form Art](http://www.c3.hu/collection/form), Kass Schmitt and Yoz Grahame [Choose](https://bak.spc.org/choose/), or Dan Kurtz [Binky](https://www.binky.rocks/)
 
 #### Design
 
