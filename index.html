@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -6,35 +6,106 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+  <title>Everyone Loves Math</title>
+
   <link href="assets/css/styles.css" rel="stylesheet">
-
-  <title>DIG 245 Everyone ♥ Math</title>
-
 </head>
 
 <body>
 
-  <!-- visible content goes here -->
-  <h1>DIG 245 Everyone ♥ Math</h1>
+  <div class="background">
+    <img src="https://www.davidson.edu/sites/default/files/styles/extra_extra_large_24_7/public/2020-08/Dining1.jpg?h=c6980913&itok=E7P1s1Jr" alt="banner" width="100%">
+    <!-- We get an error message for the above: 'Bad value 100% for attribute width on element img: Expected a digit but saw % instead.' But when we take away the % it doesn't work how we want it to.-->
+  </div>
+
   <div class="catcardbox">
     <div class="catcard"></div>
     <div class="bluerec"></div>
     <div class="frame"></div>
-    <div class="number">80133355598</div>
+    <div class="number">8013335559802367</div>
     <div class="redrec"></div>
     <div class="student">STUDENT</div>
     <div class="davidson">DAVIDSON</div>
-    <div class="wildcat">
-      <img src="https://davidsonwildcats.com/images/logos/site/site.png" alt="wildcat" width = "99">
-    </div>
+      <div class="wildcat"> <img src="https://davidsonwildcats.com/images/logos/site/site.png" alt="wildcat" width="99"></div>
+      <div class="statue"> <img src="https://assets.simpleviewinc.com/simpleview/image/upload/c_fill,h_1100,q_75,w_800/v1/clients/lakenorman/davidson_statue__638400a8-4a9a-4055-b968-6e7feeddb441.jpg" alt="statue" width="99"></div>
 </div>
+<h2>Dining Dollars Calculator</h2>
 
+  <div class="container">
+
+    <form>
+      <label for="diningDollars">How many dining dollars are included in your meal plan?</label>
+      <select id="diningDollars" name="diningDollars">
+        <option value="250">$250</option>
+        <option value="100">$100</option>
+      </select>
+
+      <br>
+      <label for="meals"> How many meals have you purchased at Commons this semester? </label>
+      <input id="meals" name="meals" type="number" step="1" value="0" min="0" max="27">
+
+      <br>
+      <input type="submit" id="submit" value="submit">
+    </form>
+
+
+
+    <h5>How many dining dollars do you have left? (Assuming a Commons meal cost $9)</h5>
+    <div id="remaining"></div>
+    <div id="unionOptions"></div>
+
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-  <script src="assets/js/main.js"></script>
+
+  <script>
+    // store a reference to the bananas input element
+    var diningDollars = document.getElementById("diningDollars");
+    var meals = document.getElementById("meals");
+    var submitButton = document.getElementById("submit");
+    var remaining = document.getElementById("remaining");
+    var unionOptions = document.getElementById("unionOptions");
+
+    // add an on load listener to the page
+    window.onload = function() {
+
+      // add an input event listener to bananas input
+      document.addEventListener("submit", function(e) {
+        // log
+        console.log(diningDollars.value);
+        // call the updatePage function
+        // document.getElementById("diningDollarsValue").innerText = diningDollars.value;
+        // document.getElementById("mealsValue").innerText = meals.value;
+        let remaining_dollars = diningDollars.value - 9 * meals.value;
+        document.getElementById("remaining").innerText = "You have $" + (remaining_dollars) + " dining dollars left.";
+
+        // Uncrustable is $5, sushi is $6, chips are $3
+        if (remaining_dollars >= 8) {
+          document.getElementById("unionOptions").innerText = "You can afford " + Math.floor(remaining_dollars / 11) + " orders of sushi or " +
+            Math.floor(remaining_dollars / 5) + " uncrustables or " + Math.floor(remaining_dollars / 3) + " bags of chips!";
+        } else if (remaining_dollars >= 5) {
+          document.getElementById("unionOptions").innerText = "You can't afford sushi, but you can afford " + Math.floor(remaining_dollars / 5) + " uncrustables or " +
+            Math.floor(remaining_dollars / 3) + " bags of chips!";
+        } else if (remaining_dollars >= 3) {
+          document.getElementById("unionOptions").innerText = "You can't afford sushi or an uncrustable, but you can afford " + Math.floor(remaining_dollars / 3) + " bags of chips!";
+        } else {
+          document.getElementById("unionOptions").innerText = "You can't afford anything from Union. :("
+        }
+
+        e.preventDefault();
+      });
+    }
+
+    // update visual stuff on the page
+    function updatePage() {
+      // store the vaalue of bananas (*3) inside the #bananasValue element
+      document.getElementById("diningDollarsValue").innerText = diningDollars.value;
+      document.getElementById("mealsValue").innerText = meals.value;
 
 
-
+    }
+  </script>
 
 </body>
 

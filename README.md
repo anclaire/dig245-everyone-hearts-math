@@ -52,21 +52,21 @@ Complete the following to prepare for this assignment. See [Resources](#resource
 
 #### Design
 
-- [ ] Use Figma to create a wireframe and design iterations for your project.
+- [X] Use Figma to create a wireframe and design iterations for your project.
 
 #### Code
 
-- [ ] Use HTML, CSS, and JS to code your design inside `index.html`
+- [X] Use HTML, CSS, and JS to code your design inside `index.html`
 - [ ] Use [HTML form fields](https://www.w3schools.com/html/html_forms.asp) to let users enter different values in order to change the outcome of the story.
 - [ ] Use [HTML form input attributes](https://www.w3schools.com/html/html_form_attributes.asp) to perform client-side validate on input values
 - [ ] Use [Javascript variables](https://www.w3schools.com/js/js_variables.asp) to allow users to change the outcome of the problem.
 - [ ] Use [Twitter Bootstrap framework](https://getbootstrap.com/) to style your form elements
-- [ ] Use images or other media as needed in the design or form outputs.
+- [X] Use images or other media as needed in the design or form outputs.
 
 #### Publish
-- [ ] [Save and refresh](https://github.com/omundy/learn-computing/blob/main/topics-keyboard-shortcuts.md#web-development-edit-save-refresh-loop) your work in the browser often to see your changes.
-- [ ] Commit changes regularly.
-- [ ] Confirm valid [HTML](https://validator.w3.org/) and [CSS](https://jigsaw.w3.org/css-validator/) <sup>[(?)](https://github.com/omundy/dig245-critical-web-design/blob/main/reference-sheets/css.md#css-validation)</sup>
+- [X] [Save and refresh](https://github.com/omundy/learn-computing/blob/main/topics-keyboard-shortcuts.md#web-development-edit-save-refresh-loop) your work in the browser often to see your changes.
+- [X] Commit changes regularly.
+- [X] Confirm valid [HTML](https://validator.w3.org/) and [CSS](https://jigsaw.w3.org/css-validator/) <sup>[(?)](https://github.com/omundy/dig245-critical-web-design/blob/main/reference-sheets/css.md#css-validation)</sup>
 - [ ] When finished, [push, publish, and post your project](https://docs.google.com/document/d/17U_zmzM_eML_qkG0PaOdDRcEk3YEmbiQ1TyNnbAM08k/edit#bookmark=id.8jryplv1i8a)
 
 
