@@ -42,18 +42,21 @@
       </select>
 
       <br>
-      <label for="meals"> How many meals have you purchased at Commons this semester? </label>
+      <label for="meals"> How many meals have you purchased at Commons? </label>
       <input id="meals" name="meals" type="number" step="1" value="0" min="0" max="27">
 
       <br>
-      <input type="submit" id="submit" value="submit">
+      <input type="submit" id="submit" value="SUBMIT">
     </form>
 
 
 
-    <h5>How many dining dollars do you have left? (Assuming a Commons meal cost $9)</h5>
+    <h4>How many dining dollars do you have left? (Assuming a Commons meal cost $9)</h4>
     <div id="remaining"></div>
     <div id="unionOptions"></div>
+
+
+    <p>This is assuming the following prices: $9 Commons meal, $8 sushi, $5 uncrustable, $3 chips.</p>
 
   </div>
 
@@ -83,10 +86,10 @@
         // Uncrustable is $5, sushi is $6, chips are $3
         if (remaining_dollars >= 8) {
           document.getElementById("unionOptions").innerText = "You can afford " + Math.floor(remaining_dollars / 11) + " orders of sushi or " +
-            Math.floor(remaining_dollars / 5) + " uncrustables or " + Math.floor(remaining_dollars / 3) + " bags of chips!";
+            Math.floor(remaining_dollars / 5) + " uncrustables or " + Math.floor(remaining_dollars / 3) + " bags of chips. Choose wisely!";
         } else if (remaining_dollars >= 5) {
           document.getElementById("unionOptions").innerText = "You can't afford sushi, but you can afford " + Math.floor(remaining_dollars / 5) + " uncrustables or " +
-            Math.floor(remaining_dollars / 3) + " bags of chips!";
+            Math.floor(remaining_dollars / 3) + " bags of chips. Choose wisely!";
         } else if (remaining_dollars >= 3) {
           document.getElementById("unionOptions").innerText = "You can't afford sushi or an uncrustable, but you can afford " + Math.floor(remaining_dollars / 3) + " bags of chips!";
         } else {
