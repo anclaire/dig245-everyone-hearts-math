@@ -8,7 +8,7 @@ body {
 }
 
 p {
-  padding: 320px;
+  padding: 270px;
   text-align: center;
   width: 100%;
 }
@@ -41,8 +41,8 @@ form {
 
 .catcardbox {
   position: absolute;
-  left: 630px;
-  top: 780px;
+  left: 575px;
+  top: 680px;
 }
 /* catcard */
 .catcard{
