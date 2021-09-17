@@ -22,9 +22,10 @@ p {
 } */
 #submit {
   width: 100%;
-  background-color: green;
+  background-color: lightcoral;
   border: 2px solid black;
   margin: 8px 0;
+  font-weight: bold;
   border-radius: 4px;
 }
 
@@ -41,7 +42,7 @@ form {
 .catcardbox {
   position: absolute;
   left: 500px;
-  top: 720px;
+  top: 650px;
 }
 /* catcard */
 .catcard{

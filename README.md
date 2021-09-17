@@ -57,10 +57,10 @@ Complete the following to prepare for this assignment. See [Resources](#resource
 #### Code
 
 - [X] Use HTML, CSS, and JS to code your design inside `index.html`
-- [ ] Use [HTML form fields](https://www.w3schools.com/html/html_forms.asp) to let users enter different values in order to change the outcome of the story.
-- [ ] Use [HTML form input attributes](https://www.w3schools.com/html/html_form_attributes.asp) to perform client-side validate on input values
-- [ ] Use [Javascript variables](https://www.w3schools.com/js/js_variables.asp) to allow users to change the outcome of the problem.
-- [ ] Use [Twitter Bootstrap framework](https://getbootstrap.com/) to style your form elements
+- [X] Use [HTML form fields](https://www.w3schools.com/html/html_forms.asp) to let users enter different values in order to change the outcome of the story.
+- [X] Use [HTML form input attributes](https://www.w3schools.com/html/html_form_attributes.asp) to perform client-side validate on input values
+- [X] Use [Javascript variables](https://www.w3schools.com/js/js_variables.asp) to allow users to change the outcome of the problem.
+- [X] Use [Twitter Bootstrap framework](https://getbootstrap.com/) to style your form elements
 - [X] Use images or other media as needed in the design or form outputs.
 
 #### Publish
